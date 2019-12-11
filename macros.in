@@ -909,7 +909,7 @@ package or when debugging this package.\
 %_datadir		%{_prefix}/share
 %_sysconfdir		/etc
 %_sharedstatedir	%{_prefix}/com
-%_localstatedir		%{_prefix}/var
+%_localstatedir		@localstatedir@
 %_lib			lib
 %_libdir		%{_exec_prefix}/%{_lib}
 %_includedir		%{_prefix}/include
