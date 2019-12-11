@@ -119,7 +119,9 @@
 %_buildshell		/bin/sh
 
 #	The location of the rpm database file(s).
-%_dbpath		%{_var}/lib/rpm
+#	We want to lookup the home dir in the passwd file if necessary,
+#	which requires bash.
+%_dbpath		%(bash -c 'echo ~/.rpmdb')
 
 #	The location of the rpm database file(s) after "rpm --rebuilddb".
 %_dbpath_rebuild	%{_dbpath}
