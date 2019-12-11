@@ -1,5 +1,6 @@
 #include "system.h"
 
+#define LUA_COMPAT_MODULE 1
 #include <lua.h>
 #include <lauxlib.h>
 

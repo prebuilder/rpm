@@ -7,6 +7,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+#define LUA_COMPAT_MODULE 1
 #include "lua.h"
 #include "lauxlib.h"
 #include "lrexlib.h"
